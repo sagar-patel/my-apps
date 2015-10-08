@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vbn"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/gender_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/android_radioButton"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="29dp" >
+
+        <RadioButton
+            android:id="@+id/male_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/female_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female" />
+
+        
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/corejava_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gender_radioGroup"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:text="core java" />
+
+    <RadioButton
+        android:id="@+id/android_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/corejava_radioButton"
+        android:layout_below="@+id/corejava_radioButton"
+        android:text="android" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/corejava_radioButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="Select Your Courses"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gender_radioGroup"
+        android:layout_below="@+id/android_radioButton"
+        android:text="select your gender"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

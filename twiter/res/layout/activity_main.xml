@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#1d81cb"
+        android:text="Sign up"
+        android:textColor="#ffff00" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_button"
+        android:text="Log in"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:text="Phone,email or username"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_editText"
+        android:layout_below="@+id/username_editText"
+        android:layout_marginTop="17dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/login_button"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login2_button"
+        android:layout_below="@+id/textView3"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+        <requestFocus />
+
+    </EditText>
+
+    <Button
+        android:id="@+id/login2_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/password_editText"
+        android:layout_marginTop="71dp"
+        android:background="#1d81cb"
+        android:text="Log in"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signup_button"
+        android:layout_alignBottom="@+id/signup_button"
+        android:layout_toLeftOf="@+id/signup_button"
+        android:background="#1d81cb"
+        android:text="Log in"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/login_button"
+        android:background="#1d81cb"
+        android:ems="10" >
+    </EditText>
+
+</RelativeLayout>
